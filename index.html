@@ -5,29 +5,91 @@
 		<title>Мой первый сайт!</title>
 	</head>
 		<body>
-			<h1>Иван Иванов</h1>
-			<p>Начинающий frontend-разработчик. Учу JavaScript 180 дней.</p>
-			<p><i>Этот сайт опубликован через GitHub Pages</i></p>
+			<header>
+				<h1>Салават</h1>
+				<p>Начинающий frontend-разработчик. Учу JavaScript 180 дней.</p>
+				<nav>
+					<a href="#skills">Навыки</a> |
+					<a href="#goals">Цели</a> |
+					<a href="#contact">Контакт</a>
+				</nav>
+			</header>
 
-			<h2>Что я уже умею</h2>
-			<ol>
-				<li>Создавать HTML-страницы</li>
-				<li>Работать с тегами</li>
-			</ol>
-
-			<h2>Мои цели</h2>
-			<ol>
-				<li><strong>Освоить JavaScript</strong></li>
-				<li>Изучить React</li>
-				<li>Получить первую работу</li>
-			</ol>
-
-			<p>Мой GitHub: <a href="https://github.com">ссылка</a></p>
-
-			<img src="https://via.placeholder.com/300x150" alt="Моё фото">
+			<main>
+				<section id="skills">
+					<h2>Мои навыки</h2>
+					<table>
+						<tr>
+							<th>Технология</th>
+							<th>Уровень</th>
+							<th>День изучения</th>
+						</tr>
+						<tr>
+							<td>HTML</td>
+							<td>Базовый</td>
+							<td>1–2</td>
+						</tr>
+						<tr>
+							<td>CSS</td>
+							<td>Скоро!</td>
+							<td>3–14</td>
+						</tr>
+						<tr>
+							<td>JavaScript</td>
+							<td>В планах</td>
+							<td>15+</td>
+						</tr>
+						<tr>
+							<td>Python</td>
+							<td>Junior</td>
+							<td>90-180</td>
+						</tr>
+						<tr>
+							<td>AI</td>
+							<td>Middle</td>
+							<td>60-90</td>
+						</tr>
+					</table>
+				</section>
+			</main>
 			
-			<h3>Мой любимый фильм</h3>
-			<p>Описание моего любимого фильма</p>
-			<a href="#">Ссылка на фильм</a>
-		</body>
+			<section id="contact">
+    <h2>Связаться со мной</h2>
+    <form>
+        <label for="visitor-name">Ваше имя:</label><br>
+        <input type="text" id="visitor-name" name="visitor-name"><br><br>
+
+        <label for="visitor-email">Email:</label><br>
+        <input type="email" id="visitor-email" name="visitor-email"><br><br>
+		<label for="number">Ваш возраст</label><br>
+		<input type="number" id="number" name="age"><br><br>
+
+        <p>Вы — работодатель?</p>
+        <input type="radio" id="yes" name="employer" value="yes">
+        <label for="yes">Да</label>
+        <input type="radio" id="no" name="employer" value="no">
+        <label for="no">Нет</label><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Подписаться на прогресс обучения</label><br><br>
+
+        <label for="topic">Тема сообщения:</label><br>
+        <select id="topic" name="topic">
+            <option>Предложение о работе</option>
+            <option>Совет по обучению</option>
+            <option>Просто поздороваться</option>
+			<option>Идеи по улучшению сервиса</option>
+        </select><br><br>
+
+        <label for="message">Сообщение:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+			<footer>
+				<p>© 2026, Иван. Учусь каждый день.</p>
+			</footer>
+</body>
 </html>
