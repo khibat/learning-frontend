@@ -10,53 +10,51 @@
 			<h1>Салават</h1>
 			<p><i>Начинающий frontend-разработчик. Учу JavaScript 180 дней.</i></p>
 			<nav>
-				<a href="#about">Обо мне</a> |
-				<a href="#skills">Навыки</a> |
-				<a href="#goals">Цели</a> |
-				<a href="#contact">Контакт</a>
+				<a href="#about">Обо мне</a>
+				<a href="#skills">Навыки</a>
+				<a href="#goals">Цели</a>
+				<a href="#contact">Контакты</a>
 			</nav>
 		</header>
 
 		<main>
 			<section id="about">
 				<h2>Обо мне</h2>
-				<p>Целеустремленный, внимательный, аккуратный, ответственный, любознательный, дисциплинированный, системный...</p>
+				<ul>
+					<li>Целеустремленный</li>
+					<li>Внимательный</li>
+					<li>Аккуратный</li>
+					<li>Ответственный</li>
+					<li>Любознательный</li>
+					<li>Дисциплинированный</li>
+					<li>Системный</li>
+				</ul>
 			</section>
 
 			<section id="skills">
 				<h2>Что я умею? Мои навыки</h2>
-				<table>
-					<tr>
-						<th> Технология </th>
-						<th> Уровень </th>
-						<th> День изучения </th>
-					</tr>
-					<tr>
-						<td> HTML </td>
-						<td> Базовый </td>
-						<td> 1-2 </td>
-					</tr>
-					<tr>
-						<td> CSS </td>
-						<td> Скоро! </td>
-						<td> 3-14 </td>
-					</tr>
-					<tr>
-						<td> JavaScript </td>
-						<td> В планах </td>
-						<td> 15+ </td>
-					</tr>
-					<tr>
-						<td> Python </td>
-						<td> Начальный </td>
-						<td> 30-60 </td>
-					</tr>
-					<tr>
-						<td> AI </td>
-						<td> Средний </td>
-						<td> 90 </td>
-					</tr>
-				</table>
+				<div class="cards">
+					<div class="card">
+						<h3>HTML</h3>
+						<p>Базовый</p>
+					</div>
+					<div class="card">
+						<h3>CSS</h3>
+						<p>В процессе</p>
+					</div>
+					<div class="card">
+						<h3>JavaScript</h3>
+						<p>Скоро</p>
+					</div>
+					<div class="card">
+						<h3>Python</h3>
+						<p>Скоро</p>
+					</div>
+					<div class="card">
+						<h3>AI</h3>
+						<p>Скоро</p>
+					</div>
+				</div>
 			</section>
 
 			<section id="goals">
@@ -77,49 +75,31 @@
 			<section id="contact">
 				<h2>Связаться со мной</h2>
 				<form>
-					<table>
-						<tr>
-							<td>
-								<label for="visitor-first-name">Ваша фамилия:</label>
-							</td>
-							<td>
-								<input type="text" id="visitor-first-name" name="visitor-first-name">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label for="visitor-name">Ваше имя:</label>
-							</td>
-							<td>
-								<input type="text" id="visitor-name" name="visitior-name">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label for="visitor-email">E-Mail:</label>
-							</td>
-							<td>
-								<input type="email" id="visitor-email" name="visitor-email">
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label for="visitor-number">Возраст:</label>
-							</td>
-							<td>
-								<input type="number" id="visitor-number" name="visitor-number">
-							</td>
-						</tr>
-					</table>
+					<div class="form-row">
+						<label for="visitor-name">Ваше имя:</label>
+						<input type="text" id="visitor-name" name="visitor-name">
+					</div>
+
+					<div class="form-row">
+						<label for="visitor-email">Ваш E-mail:</label>
+						<input type="email" id="visitor-email" name="visitor-email">
+					</div>
+
+					<div class="form-row">
+						<label for="visitor-number">Ваш возраст:</label>
+						<input type="number" id="visitor-number" name="visitor-number">
+					</div>
 
 					<p>Вы работодатель?</p>
 					<input type="radio" id="yes" name="employer" value="yes">
 					<label for="yes">Да</label>
 					<input type="radio" id="no" name="employer" value="no">
-					<label for="no">Нет</label> <br><br>
+					<label for="no">Нет</label>
 
-					<input type="checkbox" id="subscribe" name="subscribe">
-					<label for="subscribe">Подписаться на прогресс обучения</label>  <br><br>
+					<p>
+						<input type="checkbox" id="subscribe" name="subscribe">
+						<label for="subscribe">Подписаться на прогресс обучения</label>
+					</p>
 
 					<label for="topic">Тема сообщения:</label> <br>
 					<select id="topic" name="topic">
@@ -128,19 +108,16 @@
 						<option>Просто поздороваться</option>
 						<option>Исправить ошибку</option>
 						<option>Идеи для прогресса</option>
-					</select> <br><br>
+					</select>
 
-					<label for="message">Сообщение:</label> <br>
-					<textarea id="message" name="message" rows="3"></textarea> <br><br>
+					<p>
+						<label for="message">Сообщение:</label>
+						<textarea id="message" name="message" rows="3"></textarea>
+					</p>
 
 					<button type="submit">Отправить</button>
-
 				</form>
 			</section>
-
-			
-
-
 		</main>
 
 		<footer>
